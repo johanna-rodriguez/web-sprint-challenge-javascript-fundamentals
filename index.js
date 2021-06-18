@@ -27,11 +27,11 @@ myFunction();
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
 function summation(number) {
-  let sum=0
+  let sum=0;
   for (let i = 1; i <= number; i++) {
     sum = sum + i;
   }
-  return sum
+  return sum;
   }
  
 
@@ -58,9 +58,9 @@ const zooAnimals = [
   */
 
   function animalNames(array){
-    let newArray = []
-    array.forEach(element => newArray.push(`name: ${element.animal_name}, scientific: ${element.scientific_name}`)) 
-    return newArray
+    let newArray = [];
+    array.forEach(element => newArray.push(`name: ${element.animal_name}, scientific: ${element.scientific_name}`)); 
+    return newArray;
   }
   
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -70,8 +70,8 @@ const zooAnimals = [
   */
 
   function lowerCaseNames(array){
-    const newArray = array.map(element => element.animal_name.toLowerCase())
-    return newArray
+    const newArray = array.map(element => element.animal_name.toLowerCase());
+    return newArray;
   }
  
   
@@ -81,8 +81,8 @@ const zooAnimals = [
   */
 
   function lowPopulationAnimals(array){
-    const newArray = array.filter(element => element.population<5)
-    return newArray
+    const newArray = array.filter(element => element.population<5);
+    return newArray;
   }
   
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
@@ -92,8 +92,8 @@ const zooAnimals = [
   */
 
   function USApop(array){
-    const newArray = array.reduce((acc,current) => acc + current.population,0)
-    return newArray
+    const newArray = array.reduce((acc,current) => acc + current.population,0);
+    return newArray;
   }
   
   
@@ -106,7 +106,7 @@ const zooAnimals = [
   */
 
   function consume(a,b,cb){
-  return cb(a,b)
+  return cb(a,b);
   }
 
  
@@ -116,19 +116,19 @@ const zooAnimals = [
  // 🦁🦁🦁 Use add to return the sum of two numbers 🦁🦁🦁
   
 function add(a,b){
-    return a + b
+    return a + b;
   }
 
 // 🦁🦁🦁 Use multiply to return the product of two numbers 🦁🦁🦁
   
 function multiply(a,b){
-    return a * b
+    return a * b;
   }
 
  // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
   
 function greeting(f_name,l_name){
-   return `Hello ${f_name} ${l_name}, nice to meet you!`
+   return `Hello ${f_name} ${l_name}, nice to meet you!`;
   }
   
   // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
@@ -179,7 +179,7 @@ function CuboidMaker(attributes){
   Create an object called cuboid that uses the new keyword to use our CuboidMaker constructor
   Add properties and values of length: 4, width: 5, and height: 5 to cuboid. */
 
-const cuboid = new CuboidMaker({length: 4, width: 5, height: 5})
+const cuboid = new CuboidMaker({length: 4, width: 5, height: 5});
 
 // 🐴🐴🐴 Test your volume and surfaceArea methods by uncommenting the logs below: 🐴🐴🐴
 // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
@@ -202,7 +202,7 @@ class CuboidMakerTwo{
     return 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
   }
 }
-const cuboidTwo = new CuboidMakerTwo({length: 4, width: 5, height: 5})
+const cuboidTwo = new CuboidMakerTwo({length: 4, width: 5, height: 5});
 
 //🦄🦄🦄 Test your volume and surfaceArea methods by uncommenting the logs below: 🦄🦄🦄
 // console.log(cuboidTwo.volume()); // 100

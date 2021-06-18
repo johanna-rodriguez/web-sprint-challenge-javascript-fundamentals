@@ -16,7 +16,7 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+// Because the closure of the variable internal it's within the outer scope of the inner function. 
 
 
 /* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */

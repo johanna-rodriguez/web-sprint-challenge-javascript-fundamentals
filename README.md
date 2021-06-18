@@ -29,13 +29,39 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+.forEach: must iterate through every single item in an array without stopping.
+forEach doesn't automatically return a new array. return statement is optional.
+
+.map: needs the return keyword (whatever we return is included in the new array). call back each element, index and returns each in turn.
+used for manipulating or replashing data. doesn't manipulate the original array.
+
+
 2. Explain the difference between a callback and a higher order function.
+
+Higher order functions receive other function as arguments.
+Callback functions are passed into higher order function as arguments.
+HOF receive/callback functions are passed in.
+
 
 3. Can you explain what a closure is and how you used it in the counter function? 
 
+They give us the ability to put functions together. It's the ability to acces functions from a parent level scop even after the parent function has been terminated.
+When a function reaches into the outer scope to grab a value, that's when a closure happens.
+
+
 4. Describe the four principles of the 'this' keyword.
 
+* Window/Global object binding: 'this' will return the window or the global object in node, or undefined in strict mode.  
+* Implicit Binding: When the function is invoked, look to the left of the dot, that's this refer to.
+* New binding: When a function is invoked as a constructor function using the new key word 'this' points to the new object that's created.
+Simply put, A constructor function is a function that returns an object. It's an object creator. We use them a lot in JavaScript, and they lend themselves to a paradigm called object-oriented programming. 
+* Explicit binding: We explicitly assign the 'this' keyword using call apply or bind.
+
+
 5. Why do we need super() in an extended class?
+
+The super keyword is used to access and call functions on an object's parent.
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 

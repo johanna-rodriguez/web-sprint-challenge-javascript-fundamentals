@@ -54,7 +54,6 @@ When a function reaches into the outer scope to grab a value, that's when a clos
 * Window/Global object binding: 'this' will return the window or the global object in node, or undefined in strict mode.  
 * Implicit Binding: When the function is invoked, look to the left of the dot, that's this refer to.
 * New binding: When a function is invoked as a constructor function using the new key word 'this' points to the new object that's created.
-Simply put, A constructor function is a function that returns an object. It's an object creator. We use them a lot in JavaScript, and they lend themselves to a paradigm called object-oriented programming. 
 * Explicit binding: We explicitly assign the 'this' keyword using call apply or bind.
 
 
